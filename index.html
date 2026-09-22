@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <!-- PAGE 1 -->
+    <section id="welcome" class="page active">
+
+        <div class="welcome-content">
+
+            <div class="small-text">A little surprise for you...</div>
+
+            <h1>
+                Happy Birthday
+                <span>My Love ❤️</span>
+            </h1>
+
+            <p>
+                Today is not just another day...
+                <br>
+                It's the day someone very special was born.
+            </p>
+
+            <button onclick="nextPage('balloons')">
+                Open Your Surprise 💝
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section id="balloons" class="page">
+
+        <h2>Pop the balloons 🎈</h2>
+
+        <p class="instruction">
+            Tap each balloon to discover a little message ❤️
+        </p>
+
+        <div class="balloon-container">
+
+            <div class="balloon-wrapper" onclick="popBalloon(1)">
+                <div class="balloon balloon1">❤️</div>
+                <div class="string"></div>
+                <div id="msg1" class="balloon-message">
+                    You make my world brighter ❤️
+                </div>
+            </div>
+
+            <div class="balloon-wrapper" onclick="popBalloon(2)">
+                <div class="balloon balloon2">❤️</div>
+                <div class="string"></div>
+                <div id="msg2" class="balloon-message">
+                    Every moment with you is special.
+                </div>
+            </div>
+
+            <div class="balloon-wrapper" onclick="popBalloon(3)">
+                <div class="balloon balloon3">❤️</div>
+                <div class="string"></div>
+                <div id="msg3" class="balloon-message">
+                    I'm lucky to have you in my life.
+                </div>
+            </div>
+
+            <div class="balloon-wrapper" onclick="popBalloon(4)">
+                <div class="balloon balloon4">❤️</div>
+                <div class="string"></div>
+                <div id="msg4" class="balloon-message">
+                    You deserve all the happiness in the world.
+                </div>
+            </div>
+
+        </div>
+
+        <button id="photoButton" class="hidden" onclick="nextPage('photos')">
+            Continue ❤️
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section id="photos" class="page">
+
+        <h2>Our Beautiful Memories 📸</h2>
+
+        <p class="instruction">
+            Five memories, but countless feelings...
+        </p>
+
+        <div class="photo-card">
+
+            <img id="memoryPhoto" src="photos/photo1.jpg" alt="Memory">
+
+            <h3 id="photoTitle">
+                My favorite smile ❤️
+            </h3>
+
+            <p id="photoText">
+                Your smile can make even an ordinary day beautiful.
+            </p>
+
+        </div>
+
+        <div class="photo-controls">
+
+            <button onclick="previousPhoto()">←</button>
+
+            <span id="photoNumber">1 / 5</span>
+
+            <button onclick="nextPhoto()">→</button>
+
+        </div>
+
+        <button onclick="nextPage('letter')">
+            One More Surprise 💌
+        </button>
+
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section id="letter" class="page">
+
+        <h2>A Letter For You 💌</h2>
+
+        <p class="instruction">
+            Tap the envelope...
+        </p>
+
+        <div class="envelope-container" onclick="openLetter()">
+
+            <div id="envelope" class="envelope">
+
+                <div class="envelope-flap"></div>
+
+                <div class="envelope-body">
+
+                    <div class="heart-seal">❤️</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="letterContent" class="letter-content">
+
+            <h3>To My Love ❤️</h3>
+
+            <p>
+                Today isn't just your birthday.
+                It's a reminder of how beautiful you are
+                and how much happiness you bring into my life.
+            </p>
+
+            <p>
+                Every moment with you feels special.
+                Your smile, your presence, your little habits —
+                everything about you makes my world a little better.
+            </p>
+
+            <p>
+                I hope this new year of your life brings you
+                endless happiness, beautiful memories,
+                success and everything your heart wishes for.
+            </p>
+
+            <p>
+                Thank you for being such a beautiful part
+                of my life.
+            </p>
+
+            <p class="love-line">
+                I hope we keep creating beautiful memories together. ❤️
+            </p>
+
+            <button onclick="nextPage('final')">
+                My Final Wish ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section id="final" class="page final-page">
+
+        <div class="final-content">
+
+            <div class="big-heart">❤️</div>
+
+            <h1>
+                Once Again...
+            </h1>
+
+            <h2>
+                Happy Birthday
+                <span>My Special One ❤️</span>
+            </h2>
+
+            <p>
+                May your smile always stay this beautiful,
+                <br>
+                and may every dream of yours come true.
+            </p>
+
+            <p class="final-love">
+                You are truly special to me. ❤️
+            </p>
+
+            <div class="fireworks">
+                ✨ ✨ ✨ ✨ ✨
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
