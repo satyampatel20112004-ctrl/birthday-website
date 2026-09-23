@@ -120,25 +120,25 @@ function createPopEffect(element) {
 const photos = [
 
     {
-        image: "photos/photo1.jpg",
+        image: "]bghtr.jpeg.",
         title: "My favorite smile ❤️",
         text: "Your smile can make even an ordinary day beautiful."
     },
 
     {
-        image: "photos/photo2.jpg",
+        image: "ddgerf.jpeg.",
         title: "A beautiful memory ✨",
         text: "Some moments become memories that we never want to forget."
     },
 
     {
-        image: "photos/photo3.jpg",
+        image: "tghtyghj.jpeg",
         title: "You are special ❤️",
         text: "Life feels a little more beautiful with you in it."
     },
 
     {
-        image: "photos/photo4.jpg",
+        image: "uygjytghj.jpeg",
         title: "Forever grateful 💕",
         text: "I'm grateful for every beautiful moment we have shared."
     },
